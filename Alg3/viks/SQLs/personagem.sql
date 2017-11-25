@@ -1,0 +1,15 @@
+create table personagem(
+id int auto_increment primary key,
+me varchar(100),
+hp int,
+adren int,
+codinventario int,
+codcenario int,
+codhistoria int,
+codequipamento int,
+codhabilidade int,
+constraint fk_personagem_inventario FOREIGN KEY (codinventario) REFERENCES inventario (id),
+constraint fk_personagem_cenario FOREIGN KEY (codcenario) REFERENCES cenario (id),
+constraint fk_personagem_historia FOREIGN KEY (codhistoria) REFERENCES historia (id),
+constraint fk_personagem_equipamento FOREIGN KEY (codequipamento) REFERENCES equipamento (id),
+constraint fk_personagem_habilidade FOREIGN KEY (codhabilidade) REFERENCES habilidade (id));

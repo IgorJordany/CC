@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/bridge of cross.unity
+  isLoaded: 1
+  isActive: 1
